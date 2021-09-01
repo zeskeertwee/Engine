@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CAMERA_HPP
+#define CAMERA_HPP
 
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
@@ -53,3 +54,5 @@ class Camera {
 		bool GetMode() { return m_Mode; }*/
 
 };
+
+#endif

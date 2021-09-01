@@ -1,4 +1,5 @@
-#pragma once
+#ifndef FRAMEBUFFER_HPP
+#define FRAMEBUFFER_HPP
 
 #include <vector>
 
@@ -70,3 +71,5 @@ class Framebuffer {
         std::vector<unsigned int> m_ColorAttachments;
         unsigned int m_DepthAttachment = 0;
 };
+
+#endif

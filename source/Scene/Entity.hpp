@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ENTITY_HPP
+#define ENTITY_HPP
 
 #include <glm/glm.hpp>
 #include <string>
@@ -50,3 +51,5 @@ public:
 
     void Draw(Shader &shader) { m_Model.Draw(shader); }
 };
+
+#endif

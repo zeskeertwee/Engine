@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CONTENT_BROWSER_PANEL_HPP
+#define CONTENT_BROWSER_PANEL_HPP
 
 #include <filesystem>
 #include <string>
@@ -18,3 +19,5 @@ class ContentBrowserPanel {
         Ref<Texture> m_FileIcon;
         Ref<TextureViewer> m_TextureViewer;
 };
+
+#endif

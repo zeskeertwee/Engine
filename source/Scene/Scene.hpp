@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SCENE_HPP
+#define SCENE_HPP
 
 #include "Entity.hpp"
 #include <vector>
@@ -67,3 +68,5 @@ class Scene {
             }
         }
 };
+
+#endif

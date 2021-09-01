@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TEXTURE_HPP
+#define TEXTURE_HPP
 
 /*#include "Renderer.hpp"
 
@@ -50,3 +51,5 @@ private:
     unsigned int m_RendererID;
     GLenum m_InternalFormat, m_DataFormat;
 };
+
+#endif

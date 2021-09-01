@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VERTEX_ARRAY_HPP
+#define VERTEX_ARRAY_HPP
 
 #include "VertexBuffer.hpp"
 
@@ -16,3 +17,5 @@ class VertexArray {
         void Bind() const;
         void Unbind() const;
 };
+
+#endif

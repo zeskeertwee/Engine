@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BASE_HPP
+#define BASE_HPP
 
 #include <memory>
 
@@ -17,3 +18,5 @@ constexpr Ref<T> CreateRef(Args&& ... args)
 {
     return std::make_shared<T>(std::forward<Args>(args)...);
 }
+
+#endif

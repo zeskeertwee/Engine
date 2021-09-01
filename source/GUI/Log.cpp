@@ -28,7 +28,7 @@ void Log::AddLog(const char* fmt, ...) IM_FMTARGS(2) {
 }
 
 void Log::Draw(const char* title) {
-    if (!ImGui::Begin(title)) {
+    if (ImGui::Begin(title)) {
         ImGui::End();
         return;
     }

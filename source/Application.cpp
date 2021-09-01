@@ -106,7 +106,7 @@ int main()
 
 
     Scene scene;
-    Entity entity, entity2, entity3, entity4;
+    Entity entity, entity2, entity3;
     //Entity entity2;
     //CameraInfo camera;
     std::vector<Entity> entities;
@@ -129,16 +129,9 @@ int main()
     entity3.setRotation(glm::vec3(0.0f));
     entity3.setScale(glm::vec3(1.0f));
 
-    entity4.setName("chair 1");
-    entity4.setModel("resources/model/chair/chair.fbx");
-    entity4.setPosition(glm::vec3(2.0f, 0.0f, 0.0f));
-    entity4.setRotation(glm::vec3(0.0f));
-    entity4.setScale(glm::vec3(0.001f));
-
     entities.push_back(entity);
     entities.push_back(entity2);
     entities.push_back(entity3);
-    entities.push_back(entity4);
 
     scene.setEntities(entities);
 
@@ -331,6 +324,7 @@ int main()
                         selected_Entity = i;
                     }
                 }
+                ImGui::TreePop();
             }
 
             ImGui::End();
@@ -454,6 +448,7 @@ int main()
             glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         }
 
+        ImGui::End();
         ImGui::Render();
 
         if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable)

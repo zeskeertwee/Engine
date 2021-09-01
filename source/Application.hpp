@@ -1,4 +1,5 @@
-#pragma once
+#ifndef APPLICATION_HPP
+#define APPLICATION_HPP
 
 // imgui
 #include "imgui.h"
@@ -50,3 +51,5 @@
 #include "Scene/SceneSerializer.hpp"
 
 #include "Panel/ContentBrowserPanel.hpp"
+
+#endif

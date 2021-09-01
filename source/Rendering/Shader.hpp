@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SHADER_HPP
+#define SHADER_HPP
 
 #include <string>
 #include <unordered_map>
@@ -39,3 +40,5 @@ private:
 
 	int GetUniformLocation(const std::string& name);
 };
+
+#endif

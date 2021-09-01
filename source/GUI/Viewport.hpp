@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VIEWPORT_HPP
+#define VIEWPORT_HPP
 
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
@@ -8,3 +9,5 @@
 namespace Viewport {
     void Window(GLFWwindow* window);
 }
+
+#endif

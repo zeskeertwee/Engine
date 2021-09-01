@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SCENE_SERIALIZER_HPP
+#define SCENE_SERIALIZER_HPP
 
 #include <string>
 
@@ -16,3 +17,5 @@ class SceneSerializer {
     private:
         Scene m_Scene;
 };
+
+#endif

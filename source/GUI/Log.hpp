@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LOG_HPP
+#define LOG_HPP
 
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
@@ -12,3 +13,5 @@ struct Log {
     void AddLog(const char* fmt, ...) IM_FMTARGS(2);
     void Draw(const char* title);
 };
+
+#endif

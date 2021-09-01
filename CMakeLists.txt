@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.9)
 
 project(Engine)
 
-include(C:/dev/scripts/buildsystems/vcpkg.cmake)
+include(~/repos/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 # Source files
 #set(CMAKE_BUILD_TYPE Debug)
